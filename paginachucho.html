@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+  <title>SOLUCIONES Y ACCIONES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #e6f4ea;
+    }
+
+    header {
+      background-color:rgb(159, 185, 233);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.6em;
+      color: rgb(27, 74, 26);
+    }
+
+    .logo img {
+      margin-right: 10px;
+      width: 80px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color:white;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    #hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      height: 90vh;
+      color: white;
+      background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("imagenes/imgc2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-top: 70px;
+      padding: 20px;
+    }
+
+    #hero h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 20px;
+    }
+
+    .faq-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .faq-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .faq-card h1 {
+      font-size: 1.8em;
+      text-align: center;
+      color: #2F855A;
+    }
+
+    .faq-card:nth-child(2) h1 { color: #DD6B20; }
+    .faq-card:nth-child(3) h1 { color: #C53030; }
+
+    .faq-card small {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .faq-card img {
+      max-width: 200px;
+      height: auto;
+      flex-shrink: 0;
+    }
+    /* Footer */
+#footer {
+    background-color: rgb(101, 156, 207);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    clear: both; /* Evita que flote encima de otros elementos */
+}
+
+#footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      #hero {
+        height: auto;
+        padding: 40px 20px;
+      }
+
+      #hero h1 {
+        font-size: 2.5em;
+      }
+
+      .faq-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .faq-card img {
+        max-width: 100%;
+      }
+
+      .faq-card h1 {
+        font-size: 1.5em;
+      }
+
+      .faq-card small {
+        font-size: 0.95em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #hero h1 {
+        font-size: 2em;
+      }
+
+      .logo img {
+        width: 60px;
+      }
+
+      nav a {
+        font-size: 1em;
+      }
+
+      .faq-card {
+        padding: 1rem;
+      }
+
+      .faq-card small {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="imagenes/logo2-removebg-preview.png" alt="Logo">
+        <a href="index.html" style="color: rgb(27, 74, 26); text-decoration: none;">DESPLASTIFICATE</a>
+      </div>
+      <nav>
+        <a href="paginacaleb.html">Causas</a>
+        <a href="paginachucho.html">Soluciones</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <h1>SOLUCIONES Y ACCIONES</h1>
+  </section>
+
+  <main>
+    <div class="container">
+      <section class="faq-card" id="soluciones">
+        <div>
+          <h1>//Reducir el uso de plástico\\</h1>
+          <small>
+            1. Utilizar bolsas reutilizables para compras.<br>
+            2. Evitar productos con embalajes excesivos.<br>
+            3. Optar por productos envasados en vidrio o cartón.<br>
+            4. Utilizar botellas de agua reutilizables.<br>
+            5. Evitar pajitas y cubiertos de plástico.<br>
+          </small>
+        </div>
+        <img src="imagenes/imgc4.jpg" alt="Reducir Plásticos">
+      </section>
+
+      <section class="faq-card">
+        <div>
+          <h1>//Reciclar y reutilizar\\</h1>
+          <small>
+            1. Participar en programas de reciclaje locales.<br>
+            2. Reutilizar envases de plástico para almacenar objetos.<br>
+            3. Crear manualidades con materiales reciclados.<br>
+            4. Donar objetos que aún sirvan en lugar de tirarlos.<br>
+            5. Utilizar papel reciclado para notas y cartas.<br>
+          </small>
+        </div>
+        <img src="imagenes/imgc1.jpg" alt="Reciclar y Reutilizar">
+      </section>
+
+      <section class="faq-card">
+        <div>
+          <h1>//Políticas y programas\\</h1>
+          <small>
+            1. Apoyar políticas que prohíban el uso de plásticos de un solo uso.<br>
+            2. Participar en campañas de concienciación sobre la contaminación de plásticos.<br>
+            3. Colaborar con organizaciones que trabajan en la reducción de la contaminación de plásticos.<br>
+            4. Implementar programas de reciclaje en escuelas y lugares de trabajo.<br>
+            5. Fomentar la economía circular en la comunidad.<br>
+          </small>
+        </div>
+        <img src="imagenes/imgc3.jpg" alt="Políticas y Programas">
+      </section>
+    </div>
+  </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>&copy; 2025 Awita. Todos los derechos reservados.</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
